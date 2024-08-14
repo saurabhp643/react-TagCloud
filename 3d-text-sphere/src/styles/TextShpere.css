@@ -1,0 +1,95 @@
+/* Importing Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif; /* Apply font to the whole body */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.text-shpere {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevent overflow */
+    background-color: #000; /* Black background for the text sphere */
+}
+
+.tagcloud {
+    position: absolute; /* Position absolutely to cover the whole background */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the tag cloud */
+    width: 100%;
+    height: 100%; /* Fill the entire viewport */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.2em;
+    
+}
+
+/* Change color of each text in sphere on hover */
+.tagcloud--item {
+    color: #00ffffff; /* Default color for text */
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ff6347; /* Color change on hover */
+}
+
+.form-container {
+    position: relative;
+   
+    max-width: 400px; /* Set a max width for the form */
+    width: 100%; /* Full width on smaller screens */
+    padding: 30px; /* Add padding for the form */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border-radius: 10px; /* Rounded corners */
+    
+    color: white; /* Text color for better visibility */
+  
+}
+
+h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.input-field {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding for input fields */
+    margin-top: 5px; /* Space above input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for inputs */
+    color: white; /* Text color for inputs */
+}
+
+.input-field:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
